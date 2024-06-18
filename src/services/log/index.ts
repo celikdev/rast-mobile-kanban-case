@@ -1,3 +1,5 @@
+"use client"
+
 // Add Local Storage Log
 export const getLogs = () => {
     const logs = localStorage.getItem("logs");
