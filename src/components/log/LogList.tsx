@@ -8,9 +8,11 @@ const LogList = () => {
   const logs = getLogs();
   return (
     <div className="flex w-full h-[100%] justify-center gap-4">
-      {!logs ? (
+      {!logs.length ? (
         <div className="flex items-center justify-center w-full">
-          <HashLoader color="#F0FFFF" size={50} />
+          <h1 className="text-lg font-semibold text-red-400">
+            Log Bulunamadı!
+          </h1>
         </div>
       ) : (
         <div className="w-1/2 flex flex-col gap-4">
