@@ -28,10 +28,9 @@ yarn dev
 cd ..
 ```
 
-#### bir üst dizine gidiyoruz ve sonrasında
+#### komutu ile bir üst dizine gidiyoruz ve sonrasında
 
 ```bash
-cd server/
 
 npm install
 # or
