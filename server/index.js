@@ -15,7 +15,7 @@ const port = process.env.PORT || 8080;
 connect();
 
 app.get("/", (req, res) => {
-  res.json("Hello World!");
+  res.json("Hello Rast Mobile Team!");
 });
 
 app.use("/api", MainRouter);
