@@ -20,7 +20,7 @@ npm run dev
 yarn dev
 ```
 
-#### komutu ile sunucumuzu başlatıyoruz. Ayrıca bu sunucu Heroku üzerinde http://3.126.91.57:8080 adresinde de çalışıyor. Ve client içinde default olarak bu url ile gelmektedir.
+#### komutu ile sunucumuzu başlatıyoruz. Ayrıca bu sunucu Heroku üzerinde https://rastcase-704ea582f42b.herokuapp.com/ adresinde de çalışıyor. Ve client içinde default olarak bu url ile gelmektedir.
 
 ## Client
 

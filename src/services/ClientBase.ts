@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const ClientBase = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_API_URL,
+    baseURL: process.env.NEXT_PUBLIC_API_URL || "https://rastcase-704ea582f42b.herokuapp.com"
 });
 
 export const GET = async (url: string, headers?: any) => {
