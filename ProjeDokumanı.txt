@@ -23,6 +23,8 @@ Public olarak erişilebilir link: https://rast-mobile-kanban-case.vercel.app
 
 Postman collectionu Board.postman_collection.json dosyası içindedir.
 
+Proje içinde Bonus olarak verilen localde geçmişi gosterme de yapılmıştır. 
+
 Eksiler:
 - Backend tarafında task edit için bir endpoint oluşturuldu. Ancak bu endpoint kullanılmadı. Task edit işlemi eklenmedi. DND Kit ile sensör özelliği kullanılarak buton eventleri dinlenilebilir ve mevcut modal componentlerine ekleme yapılabilir.
 - Task silme işlemi için bir endpoint oluşturuldu. Ancak bu endpoint kullanılmadı. Task silme işlemi eklenmedi. DND Kit ile sensör özelliği kullanılarak buton eventleri dinlenilebilir ve silme işlemi yapılabilir.
