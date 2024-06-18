@@ -1,8 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Server
 
-#### Öncelikle backend sunucumuzu çalıştırmamız gerekiyor. Bunun için
+#### Sunucu Heroku üzerinde https://rastcase-704ea582f42b.herokuapp.com/ adresinde de çalışıyor. Ve client içinde default olarak bu url ile gelmektedir. Ekstra olarak backend'i çalıştırmak isterseniz; Bunun için
 
 ```bash
 cd server/
@@ -20,7 +18,7 @@ npm run dev
 yarn dev
 ```
 
-#### komutu ile sunucumuzu başlatıyoruz. Ayrıca bu sunucu Heroku üzerinde https://rastcase-704ea582f42b.herokuapp.com/ adresinde de çalışıyor. Ve client içinde default olarak bu url ile gelmektedir.
+#### komutu ile sunucumuzu başlatıyoruz.
 
 ## Client
 
