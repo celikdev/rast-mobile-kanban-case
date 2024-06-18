@@ -1,14 +1,13 @@
 "use client";
 
 import { getLogs } from "@/services/log";
-import { HashLoader } from "react-spinners";
 import LogCard from "./LogCard";
 
 const LogList = () => {
   const logs = getLogs();
   return (
     <div className="flex w-full h-[100%] justify-center gap-4">
-      {!logs.length ? (
+      {logs?.length <= 0 ? (
         <div className="flex items-center justify-center w-full">
           <h1 className="text-lg font-semibold text-red-400">
             Log Bulunamadı!
