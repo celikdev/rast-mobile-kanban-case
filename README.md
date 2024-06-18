@@ -1,36 +1,51 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Server
 
-First, run the development server:
+#### Öncelikle backend sunucumuzu çalıştırmamız gerekiyor. Bunun için
 
 ```bash
+cd server/
+
+npm install
+# or
+yarn
+```
+
+#### komutu ile gerekli paketleri yüklüyoruz. Sonrasında
+
+```
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### komutu ile sunucumuzu başlatıyoruz. Ayrıca bu sunucu AWS üzerinde http://3.126.91.57:5000 adresinde de çalışıyor. Ve client içinde default olarak bu url ile gelmektedir.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Client
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Backend sunucumuzu çalıştırdıktan sonra client'ı çalıştırabiliriz. Bunun için
 
-## Learn More
+```bash
+cd ..
+```
 
-To learn more about Next.js, take a look at the following resources:
+#### bir üst dizine gidiyoruz ve sonrasında
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+cd server/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+npm install
+# or
+yarn
+```
 
-## Deploy on Vercel
+#### komutu ile gerekli paketleri yüklüyoruz. Sonrasında
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+npm run dev
+# or
+yarn dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### komutu ile client'ı çalıştırıyoruz. Web tarayıcısında http://localhost:3000 adresinde açabiliriz. Ayrıca bu uygulama Vercel üzerinde xxxx adresinde de bulunmaktadır.

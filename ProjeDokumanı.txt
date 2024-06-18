@@ -1,0 +1,23 @@
+## Kullanılan Teknolojiler
+- React
+- Next.js
+- Next Router
+- React Query
+- Tailwind CSS
+- Axios
+- React Modal
+- DND Kit
+
+Proje ilk açıldığında board listesi ekranı kullanıcıyı karşılamaktadır. Burada kullanıcı boardlardan birine girer, ve detay ekranı açılır. Burada 4 adet liste bulunur. Bu listelere kullanıcı, açılan modal ekranından task ekleyebilir.
+
+Projede, tasklerin sürükle bırak özelliği bulunmaktadır. Tasklerin sürükle bırak özelliği ile listeler arasında ve kendi aralarında sürükleme işlemi yapılabilir.
+
+Teknoloji olarak Next.js kullanılmıştır. Ancak Next.js'in getServerSideProps ve getStaticProps özellikleri kullanılmamıştır. Bunun yerine kullanımına çok daha aşina olduğum React Query kullanılmıştır. React Query ile API'den veri çekilmiş ve state yönetimi sağlanmıştır.
+
+Modal componenti ./components/modal/index.tsx içinde compount olarak oluşturulmuştur. Daha kolay kullanım yapısı ile her yere entegre edilebilir hale getirilmiştir. Projede yalnızca task eklemek için kullanılmıştır.
+
+
+Eksiler:
+- Backend tarafında task edit için bir endpoint oluşturuldu. Ancak bu endpoint kullanılmadı. Task edit işlemi eklenmedi. DND Kit ile sensör özelliği kullanılarak buton eventleri dinlenilebilir ve mevcut modal componentlerine ekleme yapılabilir.
+- Task silme işlemi için bir endpoint oluşturuldu. Ancak bu endpoint kullanılmadı. Task silme işlemi eklenmedi. DND Kit ile sensör özelliği kullanılarak buton eventleri dinlenilebilir ve silme işlemi yapılabilir.
+- Sürükle bırak işleminde, overflow özelliği bulunan listelerde stillendirme hatası olarak kartlar listenin altından gelmektedir. Z-index hataya çözüm olmadı.
