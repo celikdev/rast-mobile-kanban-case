@@ -4,6 +4,7 @@ import { TaskList } from "@/components/task";
 import { useGetBoard } from "@/hooks/useBoard";
 import { useMoveTask } from "@/hooks/useTask";
 import { DndContext } from "@dnd-kit/core";
+import { HashLoader } from "react-spinners";
 
 // Açıklama: Sayfa URL içindeki parametreyi kullanarak board detaylarını getirir.
 const BoardDetail = ({ params }: { params: { id: string } }) => {
@@ -22,7 +23,9 @@ const BoardDetail = ({ params }: { params: { id: string } }) => {
     >
       <div className="flex flex-col items-center py-10 gap-4 h-[96%]">
         {isLoading ? (
-          <div>Loading...</div>
+          <div className="flex w-full items-start justify-center">
+            <HashLoader color="#F0FFFF" size={50} />
+          </div>
         ) : (
           <>
             <h1 className="text-4xl font-black text-teritary">{data.title}</h1>

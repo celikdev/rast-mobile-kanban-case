@@ -10,7 +10,7 @@ app.use(CORS());
 dotenv.config();
 app.use(bodyParser.json());
 
-const port = 3001;
+const port = process.env.PORT || 8080;
 
 connect();
 

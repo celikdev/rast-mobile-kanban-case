@@ -16,6 +16,7 @@ Teknoloji olarak Next.js kullanılmıştır. Ancak Next.js'in getServerSideProps
 
 Modal componenti ./components/modal/index.tsx içinde compount olarak oluşturulmuştur. Daha kolay kullanım yapısı ile her yere entegre edilebilir hale getirilmiştir. Projede yalnızca task eklemek için kullanılmıştır.
 
+Backend tarafında NodeJS, Express, MongoDB kullanılmıştır. Backend tarafı aynı repo içinde server klasörü altında bulunmaktadır.
 
 Eksiler:
 - Backend tarafında task edit için bir endpoint oluşturuldu. Ancak bu endpoint kullanılmadı. Task edit işlemi eklenmedi. DND Kit ile sensör özelliği kullanılarak buton eventleri dinlenilebilir ve mevcut modal componentlerine ekleme yapılabilir.
