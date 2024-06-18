@@ -3,6 +3,7 @@
 import { TaskList } from "@/components/task";
 import { useGetBoard } from "@/hooks/useBoard";
 import { useMoveTask } from "@/hooks/useTask";
+import { createLog } from "@/services/log";
 import { DndContext } from "@dnd-kit/core";
 import { HashLoader } from "react-spinners";
 
@@ -19,6 +20,7 @@ const BoardDetail = ({ params }: { params: { id: string } }) => {
           taskId: active.id,
           listId: over?.id,
         });
+        createLog({ message: `Task Moved to ${over?.id}` });
       }}
     >
       <div className="flex flex-col items-center py-10 gap-4 h-[96%]">

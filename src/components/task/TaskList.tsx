@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useCreateTask } from "@/hooks/useTask";
 import { HashLoader } from "react-spinners";
 import { useDroppable } from "@dnd-kit/core";
+import { createLog } from "@/services/log";
 
 const TaskList = ({ list }: { list: List }) => {
   const [isCreateTask, setIsCreateTask] = useState<boolean>(false);
@@ -26,7 +27,10 @@ const TaskList = ({ list }: { list: List }) => {
           {list.title}
         </h1>
         <button
-          onClick={() => setIsCreateTask(true)}
+          onClick={() => {
+            setIsCreateTask(true);
+            createLog({ message: `${list.title} Opened Create Task Modal` });
+          }}
           className="border-2 px-4 rounded-lg text-sm text-teritary font-semibold transition-colors duration-300 hover:bg-teritary hover:border-teritary hover:text-secondary"
         >
           Create
@@ -49,6 +53,11 @@ const TaskList = ({ list }: { list: List }) => {
                   title: createTaskForm.get("title") as string,
                   description: createTaskForm.get("description") as string,
                   listID: list._id,
+                });
+                createLog({
+                  message: `Task Created in ${list.title} 
+                with title: ${createTaskForm.get("title") as string}
+                  `,
                 });
               }}
               className="flex flex-col items-center w-full gap-4"
