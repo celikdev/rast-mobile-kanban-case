@@ -20,7 +20,7 @@ npm run dev
 yarn dev
 ```
 
-#### komutu ile sunucumuzu başlatıyoruz. Ayrıca bu sunucu AWS üzerinde http://3.126.91.57:5000 adresinde de çalışıyor. Ve client içinde default olarak bu url ile gelmektedir.
+#### komutu ile sunucumuzu başlatıyoruz. Ayrıca bu sunucu Heroku üzerinde http://3.126.91.57:8080 adresinde de çalışıyor. Ve client içinde default olarak bu url ile gelmektedir.
 
 ## Client
 
@@ -48,4 +48,4 @@ npm run dev
 yarn dev
 ```
 
-#### komutu ile client'ı çalıştırıyoruz. Web tarayıcısında http://localhost:3000 adresinde açabiliriz. Ayrıca bu uygulama Vercel üzerinde xxxx adresinde de bulunmaktadır.
+#### komutu ile client'ı çalıştırıyoruz. Web tarayıcısında http://localhost:3000 adresinde açabiliriz. Ayrıca bu uygulama Vercel üzerinde https://rast-mobile-kanban-case.vercel.app/ adresinde de bulunmaktadır.
